@@ -1,11 +1,21 @@
 {
+  "name": "contact-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^17.0.0",
     "express": "^5.1.0",
     "joi": "^17.13.3",
     "mongoose": "^8.16.1",
-    "nodemailer": "^7.0.4",
+    "nodemailer": "^7.0.4"
+  },
+  "devDependencies": {
     "nodemon": "^3.1.10"
   }
 }
