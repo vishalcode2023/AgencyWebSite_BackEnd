@@ -10,7 +10,7 @@ const mainRouter = require('./Router/MainRouter');
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors({
-  origin: '*',
+  origin: 'https://agency-web-site-two.vercel.app/',
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
 }));
 
