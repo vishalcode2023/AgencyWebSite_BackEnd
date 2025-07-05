@@ -9,10 +9,15 @@ const mainRouter = require('./Router/MainRouter');
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+const allowedOrigins = [
+  'https://agency-web-site-mbny9chya-vishals-projects-9c045f4e.vercel.app'
+];
 app.use(cors({
-  origin: 'https://agency-web-site-two.vercel.app/',
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  origin: allowedOrigins,
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
 }));
+
 
 //Database connection
 connectDB();
