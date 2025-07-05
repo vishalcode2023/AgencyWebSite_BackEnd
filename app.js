@@ -11,8 +11,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 const allowedOrigins = [
-  'https://agency-web-site-mbny9chya-vishals-projects-9c045f4e.vercel.app'
+  'https://agency-web-site-two.vercel.app',
+  'https://agency-web-site-mbny9chya-vishals-projects-9c045f4e.vercel.app', 
 ];
+
 app.use(cors({
   origin: allowedOrigins,
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
